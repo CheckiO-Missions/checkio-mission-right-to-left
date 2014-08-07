@@ -1,44 +1,47 @@
+<div class="story">
+    <!--TODO-->
+</div>
+
 <p>
-    <i>( Describe task in general )</i>
+    One of robots got the simple task -- to join a sequence of strings in one sentence.
+    But this robot is left-hander and wants to joke. Let's help to do this.
+</p>
+<p>
+    You are given a sequence of strings. You should to join these strings in one text,
+    where initial strings are separated by commas.
+    And for joke you should replace all words "right" to "left", even if it's a part of a word.
+    All strings are given in lowercase.
+</p>
+
+
+<p>
+    <strong>Input: </strong> A sequence of strings as a tuple of strings (unicode).
 </p>
 
 <p>
-    Sum two passed ints
-</p>
-
-<p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.png" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
-</p>
-
-<p><i>( Explain input and output values )</i></p>
-<p>
-    <strong>Input: </strong> Two arguments. Both are int
-</p>
-
-<p>
-    <strong>Output: </strong> Int. 
+    <strong>Output: </strong> The text as a string.
 </p>
 
 
 
 <div class="for_info_only">
-    <p><i>( Put some usage examples )</i></p>
     <p>
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
+left_join(("left", "right", "left", "stop")) == "left,left,left,stop"
+left_join(("bright aright", "ok")) == "bleft aleft,ok"
+left_join(("brightness wright",)) == "bleftness wleft"
+left_join(("enough", "jokes")) == "enough,jokes"
     </pre>
 </div>
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    <i>(Here you can explain how it can be used in development and what is usage of this.)</i>
+    Here you will look at simple operations with strings and sequences.
 </p>
 
 <p>
-    <strong>Precondition:</strong>
-    <i>Constraints for Input</i>
+    <strong>Precondition:</strong><br>
+    0 &lt; len(phrases) &lt; 42<br>
 </p>
