@@ -6,31 +6,50 @@ Each test is dict with
     "answer" -- your right answer
     "explanation" -- not necessary key, it's using for additional info in animation.
 """
-
-
 TESTS = {
     "Basics": [
         {
-            "input": [3, 2],
-            "answer": 5,
-            "explanation": "3+2=?"
+            "input": ("left", "right", "left", "stop"),
+            "answer": "left,left,left,stop",
         },
         {
-            "input": [5, 7],
-            "answer": 12,
-            "explanation": "5+7=?"
-        }
+            "input": ("bright aright", "ok"),
+            "answer": "bleft aleft,ok",
+        },
+        {
+            "input": ("brightness wright",),
+            "answer": "bleftness wleft",
+        },
+        {
+            "input": ("enough", "jokes"),
+            "answer": "enough,jokes",
+        },
+
     ],
     "Extra": [
         {
-            "input": [6, 3],
-            "answer": 9,
-            "explanation": "6+3=?"
+            "input": ("r", "i", "g", "h", "t"),
+            "answer": "r,i,g,h,t",
         },
         {
-            "input": [6, 7],
-            "answer": 13,
-            "explanation": "6+7=?"
-        }
+            "input": (
+            'lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetuer', 'adipiscing', 'elit', 'aenean', 'commodo',
+            'ligula', 'eget', 'dolor', 'aenean', 'massa', 'cum', 'sociis', 'natoque', 'penatibus', 'et', 'magnis',
+            'dis', 'parturient', 'montes', 'nascetur', 'ridiculus', 'mus', 'donec', 'quam', 'felis', 'ultricies', 'nec',
+            'pellentesque', 'eu', 'pretium', 'quis', 'sem', 'nulla', 'consequat', 'massa', 'quis'),
+            "answer": 'lorem,ipsum,dolor,sit,amet,consectetuer,adipiscing,elit,aenean,commodo,ligula,eget,dolor,aenean,massa,cum,sociis,natoque,penatibus,et,magnis,dis,parturient,montes,nascetur,ridiculus,mus,donec,quam,felis,ultricies,nec,pellentesque,eu,pretium,quis,sem,nulla,consequat,massa,quis',
+
+        },
+        {
+            "input": ("right",) * 20,
+            "answer": ",".join(("left",) * 20)
+        },
+        {
+            "input": ("right", "left") * 10,
+            "answer": ",".join(("left",) * 20)
+        },
+
+
+
     ]
 }
