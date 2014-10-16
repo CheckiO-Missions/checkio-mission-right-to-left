@@ -1,0 +1,54 @@
+<div class="story">
+    <p>"Pendant des si&egrave;cles, les gauchers ont souffert d'une discrimination injuste dans un monde adapt&eacute; pour des droitiers."
+        <br>Santrock, John W. (2008). Motor, Sensory, and Perceptual Development.</p>
+
+    <p>
+        "La plupart des Hommes (disons entre 70% et 95%) sont droitiers ; une minorit&eacute; (disons entre 5% et 30%)
+        sont gauchers, et un nombre ind&eacute;termin&eacute; de personnes sont probablement mieux d&eacute;crits en tant qu'ambidextres."
+        <br>Scientific American. www.scientificamerican.com</p>
+
+</div>
+
+<p>
+    On a donn&eacute; une t&acirc;che simple &agrave; un de nos robots:
+    assembler une s&eacute;quence de chaines de caract&egrave;res pour produire des instructions sur la mani&egrave;re de contourner le vaisseau.
+    Mais ce robot est gaucher et a tendance &agrave; faire des blagues &agrave; ce sujet pour embrouiller ses amis droitiers.
+</p>
+<p>
+    On vous donne une s&eacute;quence de chaines de caract&egrave;res.
+    Vous devez assembler ces chaines de caract&egrave;res en une seule, avec une virgule entre chacune d'entre elles.
+    Pour faire une blague aux robots droitiers, vous devez remplacer toutes les occurences du mot &quot;right&quot; par le mot &quot;left&quot;,
+    m&ecirc;me si celles-ci font partie d'un autre mot. Toutes les chaines de caract&egrave;res sont donn&eacute;es en minuscule.
+</p>
+
+
+<p>
+    <strong>Entr&eacute;e : </strong> Une s&eacute;quence (un tuple) de chaines de caract&egrave;res (unicode).
+</p>
+
+<p>
+    <strong>Sortie : </strong> Le texte en tant que chaine de caract&egrave;res.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Exemple :</strong>
+    </p>
+    <pre class="brush: python">
+left_join(("left", "right", "left", "stop")) == "left,left,left,stop"
+left_join(("bright aright", "ok")) == "bleft aleft,ok"
+left_join(("brightness wright",)) == "bleftness wleft"
+left_join(("enough", "jokes")) == "enough,jokes"
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>&Agrave; quoi cela sert : </strong>
+    C'est un exemple simple d'op&eacute;rations sur des chaines de caract&egrave;res et des s&eacute;quences.
+</p>
+
+<p>
+    <strong>Pr&eacute;condition :</strong><br>
+    0 &lt; len(phrases) &lt; 42<br>
+</p>
