@@ -1,0 +1,50 @@
+<div class="story">
+    <p>"Durante siglo, los zurdos han sufrido una discriminación injusta en un mundo diseñado para diestros."
+        <br>Santrock, John W. (2008). Desarrollador Motor, Sensorial, y Perceptual.</p>
+
+    <p>
+        "La mayoría de los humanos (entre el 75 y el 95 por ciento) son diestros, una minoría (entre el 5 y el 30 por ciento) son zurdos, y un número intermedio de personas son, probablemente, mejor definidos como ambidiestros."
+        <br>Scientific American. www.scientificamerican.com</p>
+
+</div>
+<p>
+    A uno de los robots se le ha asignado la tarea sencilla
+    de unir una secuencia de palabras en una frase para generar las instrucciones de cómo moverse por la nave. Pero este robot es zurdo y tiene la tendencia de bromear y confundir a sus amigos diestros.     
+</p>
+
+<p>
+    Se da una secuencia de palabras.
+    Debes unir estas palabras en una cadena de texto donde las palabras están separadas por comas.
+    Debido a las bromas gastadas a los robots diestros, debes reemplazar todas las ocurrencias de la palabra "right" (derecha) por la palabra "left" (izquierda), incluso si esta forma parte de otra palabra. Todas las cadenas de texto son dadas en minúscula.
+</p>
+
+<p>
+    <strong>Entrada: </strong> Una secuencia de palabras en forma de tupla de cadenas de texto (unicode).
+</p>
+
+<p>
+    <strong>Salida: </strong> El texto como cadena de texto.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Ejemplo:</strong>
+    </p>
+    <pre class="brush: python">
+left_join(("left", "right", "left", "stop")) == "left,left,left,stop"
+left_join(("bright aright", "ok")) == "bleft aleft,ok"
+left_join(("brightness wright",)) == "bleftness wleft"
+left_join(("enough", "jokes")) == "enough,jokes"
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Cómo se usa: </strong>
+    Este es un ejemplo sencillo de operaciones usando cadenas de texto y secuencias:    
+</p>
+
+<p>
+    <strong>Precondición:</strong><br>
+    0 &lt; len(phrases) &lt; 42<br>
+</p>
