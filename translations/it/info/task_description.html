@@ -1,0 +1,56 @@
+<div class="story">
+    <p>"Per secoli i mancini hanno sofferto un'ingiusta discriminazione in un mondo pensato per destrorsi."
+        <br>Santrock, John W. (2008). Motor, Sensory, and Perceptual Development.</p>
+
+    <p> "La maggior parte degli umani (tra il 70 ed il 95 percento) sono destrorsi, una minoranza
+        (tra il 5 ed il 30 percento) &egrave; mancina, ed un numero indeterminato di persone sono probabilmente
+        meglio descritte come ambidestri."
+        <br>Scientific American. www.scientificamerican.com</p>
+
+</div>
+
+<p>
+    Uno dei robot &egrave; incaricato di un semplice compito:
+    unire una sequenza di stringhe un una frase per produrre istruzioni su come spostarsi
+    sulla nave. Tuttavia questo robot &egrave; mancino ed ha la tendenza a burlarsi dei suoi amici
+    destrorsi confondendoli.
+</p>
+<p>
+    Ti viene data una sequenza di stringhe.
+    Devi unire queste stringhe un un blocco di testo in cui le stringhe iniziali siano separate da vigole.
+    Per fare uno scherzo ai robot destrorsi devi rimpiazzare la parola "right" con la parola "left"
+    ogni volta che appare, anche se &egrave; parte di un'altra parola.
+    Tutte le stringhe sono date in caratteri minuscoli.
+</p>
+
+
+<p>
+    <strong>Input: </strong> Una sequenza di strinche come tupla si stringhe (unicode).
+</p>
+
+<p>
+    <strong>Output: </strong> Il testo come una stringa.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Esempio:</strong>
+    </p>
+    <pre class="brush: python">
+left_join(("left", "right", "left", "stop")) == "left,left,left,stop"
+left_join(("bright aright", "ok")) == "bleft aleft,ok"
+left_join(("brightness wright",)) == "bleftness wleft"
+left_join(("enough", "jokes")) == "enough,jokes"
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Come si usa: </strong>
+    Questo &egrave; un semplice esempio di operazioni effettuate con stringhe e sequenze.
+</p>
+
+<p>
+    <strong>Prerequisiti:</strong><br>
+    0 &lt; len(phrases) &lt; 42<br>
+</p>
