@@ -10,31 +10,34 @@
 </div>
 
 <p>
-    One of robots is charged with a simple task:
-    to join a sequence of strings in one sentence to produce instructions
-    on how to get around the ship.
-    But this robot is left-hander and has a tendency to joke around and confuse its right handed friends.
+    Einer der Roboter hat eine einfache Aufgabe bekommen:
+    Er soll aus einer Folge einzelner W&ouml;rter einen Satz bilden, der dann als Wegbeschreibung dienen soll, die um das
+    Raumschiff herum f&uuml;hrt.
+    Allerdings ist dieser Roboter Linksh&auml;nder und obendrein ein Spa&beta;vogel. Er kann es einfach nicht lassen,
+    seine rechtsh&auml;ndigen Kollegen zu ver&auml;ppeln.
 </p>
 <p>
-    You are given a sequence of strings.
-    You should join these strings into chunk of text where the initial strings are separated by commas.
-    As a joke on the right handed robots, you should replace all cases of the words "right" with the word "left",
-    even if it's a part of another word. All strings are given in lowercase.
+    Gegeben wird eine Folge von einzelnen Worten als Strings.
+    Du sollst aus diesen einzelnen Worten einen zusammenh&auml;ngenden String bilden, in welchem die einzelnen Worte durch
+    Kommata getrennt sind.
+    Um die rechtsh&auml;ndigen Roboter zu ver&auml;ppeln, sollst Du außerdem jedes "right" durch "left" ersetzen, auch wenn das
+    "right" nur teil eines Wortes ist.
+    Alle Worte sind klein geschrieben!
 </p>
 
 
 <p>
-    <strong>Input: </strong> A sequence of strings as a tuple of strings (unicode).
+    <strong>Eingabe: </strong> Eine Folge von Worten als Tuple (unicode).
 </p>
 
 <p>
-    <strong>Output: </strong> The text as a string.
+    <strong>Ausgabe: </strong> Den Text als String (einzelne Worte durch Kommata getrennt).
 </p>
 
 
 <div class="for_info_only">
     <p>
-        <strong>Example:</strong>
+        <strong>Beispiele:</strong>
     </p>
     <pre class="brush: python">
 left_join(("left", "right", "left", "stop")) == "left,left,left,stop"
@@ -45,11 +48,11 @@ left_join(("enough", "jokes")) == "enough,jokes"
 </div>
 
 <p class="for_info_only">
-    <strong>How it is used: </strong>
-    This is a simple example of operations using strings and sequences.
+    <strong>Wozu das gut ist: </strong>
+    Diese Aufgabe gibt ein einfaches Beispiel f&uuml;r den Umgang mit Strings und Folgen.
 </p>
 
 <p>
-    <strong>Precondition:</strong><br>
+    <strong>Bedingungen:</strong><br>
     0 &lt; len(phrases) &lt; 42<br>
 </p>
