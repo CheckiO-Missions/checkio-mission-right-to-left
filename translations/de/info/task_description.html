@@ -1,0 +1,59 @@
+<div class="story">
+    <p>"Seit Jahrhunderten leiden Linkshänder unter der ungerechten Benachteiligung einer Welt, die für Rechtshänder gemacht ist."
+        <br>Santrock, John W. (2008). Motor, Sensory, and Perceptual Development.</p>
+
+    <p>
+        "Die meisten Menschen (etwa 70 % bis 95 %) sind Rechtshänder, eine Minderheit
+        (etwa 5 % bis 30 %) Linkshänder, und eine unbestimmte Zahl von Menschen kann wohl am besten
+        als beidhändig beschrieben werden."
+        <br>Scientific American. www.scientificamerican.com</p>
+
+</div>
+
+<p>
+    Einer der Roboter hat eine einfache Aufgabe bekommen:
+    Er soll aus einer Folge einzelner Wörter einen Satz bilden, der dann als Wegbeschreibung dienen soll, die um das
+    Raumschiff herum führt.
+    Allerdings ist dieser Roboter Linkshänder und obendrein ein Spaßvogel. Er kann es einfach nicht lassen,
+    seine rechtshändigen Kollegen zu veräppeln.
+</p>
+<p>
+    Gegeben ist eine Folge von einzelnen Worten als Strings.
+    Du sollst aus diesen einzelnen Worten einen zusammenhängenden String bilden, in welchem die einzelnen Worte durch
+    Kommata getrennt sind.
+    Um die rechtshändigen Roboter zu veräppeln, sollst Du außerdem jedes "right" durch "left" ersetzen, auch wenn das
+    "right" nur Teil eines Wortes ist.
+    Alle Worte sind klein geschrieben!
+</p>
+
+
+<p>
+    <strong>Eingabe: </strong> Eine Folge von Worten als Tuple (unicode).
+</p>
+
+<p>
+    <strong>Ausgabe: </strong> Den Text als String (einzelne Worte durch Kommata getrennt).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Beispiele:</strong>
+    </p>
+    <pre class="brush: python">
+left_join(("left", "right", "left", "stop")) == "left,left,left,stop"
+left_join(("bright aright", "ok")) == "bleft aleft,ok"
+left_join(("brightness wright",)) == "bleftness wleft"
+left_join(("enough", "jokes")) == "enough,jokes"
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Wozu das gut ist: </strong>
+    Diese Aufgabe gibt ein einfaches Beispiel für den Umgang mit Strings und Folgen.
+</p>
+
+<p>
+    <strong>Bedingungen:</strong><br>
+    0 &lt; len(phrases) &lt; 42<br>
+</p>
