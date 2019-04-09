@@ -43,12 +43,10 @@ api.add_listener(
     CheckiOReferee(
         tests=TESTS,
         cover_code={
-            'python-27': cover,  # or None
             'python-3': cover
         },
-        function_name="left_join",
-        # checker=None,  # checkers.float.comparison(2)
-        # add_allowed_modules=[],
-        # add_close_builtins=[],
-        # remove_allowed_modules=[]
+        function_name={
+            "python": "left_join",
+            "js": "leftJoin"
+        }
     ).on_ready)

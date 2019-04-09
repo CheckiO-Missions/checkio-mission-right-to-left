@@ -23,7 +23,7 @@
 
 
 <p>
-    <strong>Entr&eacute;e : </strong> Une s&eacute;quence (un tuple) de chaines de caract&egrave;res (unicode).
+    <strong>Entr&eacute;e : </strong> Une s&eacute;quence de chaines de caract&egrave;res (unicode).
 </p>
 
 <p>
@@ -35,12 +35,19 @@
     <p>
         <strong>Exemple :</strong>
     </p>
-    <pre class="brush: python">
-left_join(("left", "right", "left", "stop")) == "left,left,left,stop"
+    {% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">leftJoin(["left", "right", "left", "stop"]) == "left,left,left,stop"
+leftJoin(["bright aright", "ok"]) == "bleft aleft,ok"
+leftJoin(["brightness wright"]) == "bleftness wleft"
+leftJoin(["enough", "jokes"]) == "enough,jokes"
+</pre>
+{% else %}
+<pre class="brush: python">left_join(("left", "right", "left", "stop")) == "left,left,left,stop"
 left_join(("bright aright", "ok")) == "bleft aleft,ok"
 left_join(("brightness wright",)) == "bleftness wleft"
 left_join(("enough", "jokes")) == "enough,jokes"
-    </pre>
+</pre>
+{% endif %}
 </div>
 
 <p class="for_info_only">

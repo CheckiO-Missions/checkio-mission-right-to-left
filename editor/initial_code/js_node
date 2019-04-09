@@ -1,0 +1,19 @@
+"use strict";
+
+function leftJoin(phrases) {
+    // your code here
+    return '';
+}
+
+var assert = require('assert');
+if (!global.is_checking) {
+    console.log('Example:')
+    console.log(leftJoin(["left", "right", "left", "stop"]))
+
+    // These "asserts" are used for self-checking and not for an auto-testing
+    assert.equal(leftJoin(["left", "right", "left", "stop"]), "left,left,left,stop")
+    assert.equal(leftJoin(["bright aright", "ok"]), "bleft aleft,ok")
+    assert.equal(leftJoin(["brightness wright"]), "bleftness wleft")
+    assert.equal(leftJoin(["enough", "jokes"]), "enough,jokes")
+    console.log("Coding complete? Click 'Check' to earn cool rewards!");
+}
