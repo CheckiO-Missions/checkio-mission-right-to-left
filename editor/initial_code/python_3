@@ -1,4 +1,4 @@
-def left_join(phrases):
+def left_join(phrases: tuple) -> str:
     """
         Join strings and replace "right" to "left"
     """
