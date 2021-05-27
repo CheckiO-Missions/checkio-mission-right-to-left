@@ -1,0 +1,38 @@
+<body data-author="bryukh">
+<div class="question-answer">
+    <div class="question">
+        Nie wiem od czego zacząć.
+    </div>
+    <div class="answer">
+        Możesz zamienić substring używając metody
+        <a href="https://docs.python.org/3/library/stdtypes.html#str.replace">"replace"</a>.
+<pre class="brush: python">
+"abcd ababba".replace("ab", "0") == "0cd 00ba"
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Potrzebuję kolejnej wskazówki.
+    </div>
+    <div class="answer">
+        Możesz połączyć słowa używając metody <a href="https://docs.python.org/3/library/stdtypes.html#str.join">"join"</a>.
+<pre class="brush: python">
+":".join(["A", "1", "cd"]) == "A:1:cd"
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Utknąłem w połowie drogi. Pomocy!
+    </div>
+    <div class="answer">
+        Połącz wszystkie ciągi znaków, następnie zamień słowa "right" na "left" i zwróć (a nie wyświetlaj) wynik.
+        Możesz to zrobić za pomocą zmiennej i dwóch kroków lub za pomocą łańcuchowych wywołań funkcji.
+<pre class="brush: python">
+return "...".join(some_array).replace(...)
+    </pre>
+    </div>
+</div>
+
+</body>
