@@ -1,0 +1,61 @@
+<div class="story">
+    <p>"Od wieków leworęczni cierpią z powodu niesprawiedliwej dyskryminacji w świecie zaprojektowanym dla praworęcznych."
+        <br>Santrock, John W. (2008). Motor, Sensory, and Perceptual Development.</p>
+
+    <p>
+        "Większość ludzi (powiedzmy od 70 do 95 procent) jest praworęcznych, mniejszość (powiedzmy od 5 do 30 procent)
+        leworęcznych, a nieokreśloną liczbę osób najlepiej opisać jako oburęcznych."
+        <br>Scientific American. www.scientificamerican.com</p>
+
+</div>
+
+<p>
+    Jeden z robotów ma następujące zadanie:
+    połączyć sekwencję stringów w jedno zdanie stanowiące instrukcję poruszania się po statku.
+    Robot jest leworęczny i ma tendencję do żartów i dezorientowania praworęcznych kolegów.
+</p>
+<p>
+    Otrzymujesz sekwencję stringów.
+    Powinieneś połączyć je w fragment tekstu, w którym początkowe słowa są oddzielone przecinkami.
+    Jako żart na temat robotów praworęcznych, wszystkie przypadki słów „right” należy zastąpić słowem „left”,
+    nawet jeśli jest częścią innego słowa. Wszystkie słowa składają się z małych liter.
+</p>
+
+
+<p>
+    <strong>Wejście: </strong> Sekwencja stringów.
+</p>
+
+<p>
+    <strong>Wyjście: </strong> Tekst jako ciąg słów oddzielonych przecinkami.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Przykład:</strong>
+    </p>
+    {% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">leftJoin(["left", "right", "left", "stop"]) == "left,left,left,stop"
+leftJoin(["bright aright", "ok"]) == "bleft aleft,ok"
+leftJoin(["brightness wright"]) == "bleftness wleft"
+leftJoin(["enough", "jokes"]) == "enough,jokes"
+</pre>
+{% else %}
+<pre class="brush: python">left_join(("left", "right", "left", "stop")) == "left,left,left,stop"
+left_join(("bright aright", "ok")) == "bleft aleft,ok"
+left_join(("brightness wright",)) == "bleftness wleft"
+left_join(("enough", "jokes")) == "enough,jokes"
+</pre>
+{% endif %}
+</div>
+
+<p class="for_info_only">
+    <strong>Zastosowanie: </strong>
+    Jest to prosty przykład operacji na sekwencjach.
+</p>
+
+<p>
+    <strong>Warunek wstępny:</strong><br>
+    0 &lt; len(sekwencja wejściowa) &lt; 42<br>
+</p>
