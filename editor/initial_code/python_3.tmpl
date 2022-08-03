@@ -1,0 +1,25 @@
+{% comment %}New initial code template{% endcomment %}
+{% block env %}{% endblock env %}
+
+{% block start %}
+def left_join(phrases: tuple) -> str:
+    """
+        Join strings and replace "right" to "left"
+    """
+    return "left"
+{% endblock start %}
+
+{% block example %}
+print('Example:')
+print(left_join(("left", "right", "left", "stop")))
+{% endblock %}
+
+{% block tests %}
+{% for t in tests %}
+assert {% block call %}left_join({{t.input|p_args}})
+{% endblock %} == {% block result %}{{t.answer|p}}{% endblock %}{% endfor %}
+{% endblock %}
+
+{% block final %}
+print("The mission is done! Click 'Check Solution' to earn rewards!")
+{% endblock final %}
