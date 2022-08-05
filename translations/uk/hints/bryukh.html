@@ -27,11 +27,13 @@
         Я пройшов половину шляху. Потрібна допомога!
     </div>
     <div class="answer">
-        З’єднай всі подані рядки, потім заміни «справа» на «ліворуч» і поверни результат.
-         Ти можеш зробити це за допомогою змінної та двох кроків або за допомогою ланцюжкових викликів.
+        З’єднай всі подані рядки, потім заміни «right» на «left» і поверни результат.
 <pre class="brush: python">
 def left_join(phrases: tuple) -> str:
-    return (','.join(phrases)).replace('right','left')
+    def left_join(phrases: tuple) -> str:
+    join_phrase = ','.join(phrases)
+    result = join_phrase.replace('right','left')
+    return result
     </pre>
     </div>
 </div>

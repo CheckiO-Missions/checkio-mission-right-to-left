@@ -5,7 +5,7 @@
     </div>
     <div class="answer">
         You can replace the substrings with the
-        <a href="https://docs.python.org/3/library/stdtypes.html#str.replace">"replace" method</a>.
+        <a href="https://docs.python.org/3/library/stdtypes.html#str.replace">"replace()" method</a>.
 <pre class="brush: python">
 "abcd ababba".replace("ab", "0") == "0cd 00ba"
     </pre>
@@ -28,9 +28,11 @@
     </div>
     <div class="answer">
         Join all the given strings, then replace "right" with "left" and return (do not print) the result.
-        You can do this with a variable and two steps or with chain calls.
 <pre class="brush: python">
-return "...".join(some_array).replace(...)
+def left_join(phrases: tuple) -> str:
+    join_phrase = ','.join(phrases)
+    result = join_phrase.replace('right','left')
+    return result
     </pre>
     </div>
 </div>
