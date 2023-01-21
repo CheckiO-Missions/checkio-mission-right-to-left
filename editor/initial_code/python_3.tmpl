@@ -2,11 +2,9 @@
 {% block env %}{% endblock env %}
 
 {% block start %}
-def left_join(phrases: tuple) -> str:
-    """
-        Join strings and replace "right" to "left"
-    """
-    return "left"
+def left_join(phrases: tuple[str]) -> str:
+    # your code here
+    return ""
 {% endblock start %}
 
 {% block example %}
@@ -14,6 +12,7 @@ print('Example:')
 print(left_join(("left", "right", "left", "stop")))
 {% endblock %}
 
+# These "asserts" are used for self-checking
 {% block tests %}
 {% for t in tests %}
 assert {% block call %}left_join({{t.input|p_args}})

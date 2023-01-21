@@ -1,40 +1,52 @@
 <body data-author="Doppelok">
 <div class="question-answer">
     <div class="question">
-        Я не знаю, як розпочати вирішення цієї місії
+        <p>
+            Я не знаю, як розпочати вирішення цієї місії.
+        </p>
     </div>
     <div class="answer">
-        Ти можеш використати метод, який замінює вказану фразу іншою зазначеною фразою
-        <a href="https://docs.python.org/3/library/stdtypes.html#str.replace">метод "replace"</a>.
-<pre class="brush: python">
+        <p>
+            Ти можеш використати метод, який замінює вказану фразу іншою зазначеною фразою: <a target="_blank" href="https://docs.python.org/3/library/stdtypes.html#str.replace"> replace()</a>.
+        </p>
+        <pre class="brush: python">
 "abcd ababba".replace("ab", "0") == "0cd 00ba"
-    </pre>
+        </pre>
     </div>
 </div>
 <div class="question-answer">
     <div class="question">
-        Мені потрібна допомога, щоб продовжити вирішувати місію
+        <p>
+            Мені потрібна допомога, щоб продовжити вирішувати місію.
+        </p>
     </div>
     <div class="answer">
-        І ти можеш з'єднати рядки за допомогою <a href="https://docs.python.org/3/library/stdtypes.html#str.join">метод "join"</a>.
-<pre class="brush: python">
+        <p>
+            І ти можеш з'єднати рядки за допомогою методу <a target="_blank" href="https://docs.python.org/3/library/stdtypes.html#str.join">join()</a>.
+        </p>
+        <pre class="brush: python">
 ":".join(["A", "1", "cd"]) == "A:1:cd"
-    </pre>
+        </pre>
     </div>
 </div>
 <div class="question-answer">
     <div class="question">
-        Я пройшов половину шляху. Потрібна допомога!
+        <p>
+            Я пройшов половину шляху. Потрібна допомога!
+        </p>
     </div>
     <div class="answer">
-        З’єднай всі подані рядки, потім заміни «right» на «left» і поверни результат.
-<pre class="brush: python">
-def left_join(phrases: tuple) -> str:
+        <p>
+            З’єднай всі подані рядки, потім заміни «right» на «left» і поверни результат.
+        </p>
+        <pre class="brush: python">
+def left_join(phrases: tuple[str]) -> str:
+
     join_phrase = ','.join(phrases)
     result = join_phrase.replace('right','left')
+
     return result
     </pre>
     </div>
 </div>
-
 </body>

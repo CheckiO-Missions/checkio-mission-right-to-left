@@ -1,40 +1,52 @@
 <body data-author="bryukh">
 <div class="question-answer">
     <div class="question">
-        I have no idea how to start solving this mission
+        <p>
+            I have no idea how to start solving this mission.
+        </p>
     </div>
     <div class="answer">
-        You can replace the substrings with the
-        <a href="https://docs.python.org/3/library/stdtypes.html#str.replace">"replace()" method</a>.
-<pre class="brush: python">
+        <p>
+            You can replace the substrings with the <a target="_blank" href="https://docs.python.org/3/library/stdtypes.html#str.replace">replace()</a>. method
+        </p>
+        <pre class="brush: python">
 "abcd ababba".replace("ab", "0") == "0cd 00ba"
-    </pre>
+        </pre>
     </div>
 </div>
 <div class="question-answer">
     <div class="question">
-        I need some help to proceed with the mission
+        <p>
+            I need some help to proceed with the mission.
+        </p>
     </div>
     <div class="answer">
-        And you can join strings with the <a href="https://docs.python.org/3/library/stdtypes.html#str.join">"join" method</a>.
-<pre class="brush: python">
+        <p>
+            And you can join strings with the <a target="_blank" href="https://docs.python.org/3/library/stdtypes.html#str.join">join()</a> method.
+        </p>
+        <pre class="brush: python">
 ":".join(["A", "1", "cd"]) == "A:1:cd"
-    </pre>
+        </pre>
     </div>
 </div>
 <div class="question-answer">
     <div class="question">
-        I am gone half way through. Need help!
+        <p>
+            I am gone half way through. Need help!
+        </p>
     </div>
     <div class="answer">
-        Join all the given strings, then replace "right" with "left" and return (do not print) the result.
-<pre class="brush: python">
-def left_join(phrases: tuple) -> str:
+        <p>
+            Join all the given strings, then replace "right" with "left" and return (do not print) the result.
+        </p>
+        <pre class="brush: python">
+def left_join(phrases: tuple[str]) -> str:
+
     join_phrase = ','.join(phrases)
     result = join_phrase.replace('right','left')
+
     return result
-    </pre>
+        </pre>
     </div>
 </div>
-
 </body>

@@ -24,7 +24,6 @@ TESTS = {
             "input": [("enough", "jokes")],
             "answer": "enough,jokes",
         },
-
     ],
     "Extra": [
         {
@@ -38,7 +37,6 @@ TESTS = {
             'dis', 'parturient', 'montes', 'nascetur', 'ridiculus', 'mus', 'donec', 'quam', 'felis', 'ultricies', 'nec',
             'pellentesque', 'eu', 'pretium', 'quis', 'sem', 'nulla', 'consequat', 'massa', 'quis')],
             "answer": 'lorem,ipsum,dolor,sit,amet,consectetuer,adipiscing,elit,aenean,commodo,ligula,eget,dolor,aenean,massa,cum,sociis,natoque,penatibus,et,magnis,dis,parturient,montes,nascetur,ridiculus,mus,donec,quam,felis,ultricies,nec,pellentesque,eu,pretium,quis,sem,nulla,consequat,massa,quis',
-
         },
         {
             "input": [("right",) * 20],
@@ -48,8 +46,5 @@ TESTS = {
             "input": [("right", "left") * 10],
             "answer": ",".join(("left",) * 20)
         },
-
-
-
     ]
 }
