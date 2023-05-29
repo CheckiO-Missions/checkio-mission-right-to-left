@@ -1,0 +1,54 @@
+<body data-author="bryukh">
+<div class="question-answer">
+    <div class="question">
+        <p>
+            Je n'ai aucune idée de la manière de commencer à résoudre cette mission.
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            Vous pouvez remplacer les sous-chaînes par la méthode <a target="_blank" href="https://docs.python.org/3/library/stdtypes.html#str.replace">replace()</a> 
+        </p>
+        <pre class="brush: python">
+"abcd ababba".replace("ab", "0") == "0cd 00ba"
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            J'ai besoin d'aide pour poursuivre la mission.
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            Et vous pouvez rejoindre les chaînes avec la méthode <a target="_blank" href="https://docs.python.org/3/library/stdtypes.html#str.join">join()</a>.
+        </p>
+        <pre class="brush: python">
+":".join(["A", "1", "cd"]) == "A:1:cd"
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            J'en suis à la moitié du chemin. J'ai besoin d'aide!
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            Joignez toutes les chaînes de caractères données, puis remplacez "right" par "left" et renvoyez (n'imprimez pas) le résultat.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def left_join(phrases: tuple[str]) -> str:
+
+    join_phrase = ','.join(phrases)
+    result = join_phrase.replace('right','left')
+
+    return result
+        </pre>
+        </div>
+    </div>
+</div>
+</body>
