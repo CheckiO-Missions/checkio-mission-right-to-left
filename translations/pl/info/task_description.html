@@ -1,49 +1,50 @@
 <div class="story">
-    <p>"Od wieków leworęczni cierpią z powodu niesprawiedliwej dyskryminacji w świecie zaprojektowanym dla praworęcznych."
-        <br>Santrock, John W. (2008). Motor, Sensory, and Perceptual Development.</p>
+    <p>"Przez wieki osoby leworęczne doświadczały niesprawiedliwej dyskryminacji w świecie zaprojektowanym dla osób praworęcznych"
+       <br>Santrock, John W. (2008). Rozwój motoryczny, sensoryczny i percepcyjny.</p>
 
     <p>
-        "Większość ludzi (powiedzmy od 70 do 95 procent) jest praworęcznych, mniejszość (powiedzmy od 5 do 30 procent)
-        leworęcznych, a nieokreśloną liczbę osób najlepiej opisać jako oburęcznych."
-        <br>Scientific American. www.scientificamerican.com</p>
+        "Większość ludzi (powiedzmy od 70 do 95 procent) jest praworęczna, mniejszość (powiedzmy od 5 do 30 procent) jest leworęczna
+        jest leworęczna, a nieokreślona liczba ludzi jest prawdopodobnie najlepiej opisana jako oburęczna"
+       <br>Scientific American. www.scientificamerican.com</p>
 
 </div>
 
 <p>
-    Jeden z robotów ma następujące zadanie:
-    połączyć sekwencję stringów w jedno zdanie stanowiące instrukcję poruszania się po statku.
-    Robot jest leworęczny i ma tendencję do żartów i dezorientowania praworęcznych kolegów.
+    Jeden z robotów ma proste zadanie:
+    połączyć sekwencję ciągów w jedno zdanie, aby stworzyć instrukcje
+    jak poruszać się po statku.
+    Ale ten robot jest leworęczny i ma tendencję do żartowania i mylenia swoich praworęcznych kolegów.
 </p>
 <p>
-    Otrzymujesz sekwencję stringów.
-    Powinieneś połączyć je w fragment tekstu, w którym początkowe słowa są oddzielone przecinkami.
-    Jako żart na temat robotów praworęcznych, wszystkie przypadki słów „right” należy zastąpić słowem „left”,
-    nawet jeśli jest częścią innego słowa. Wszystkie słowa składają się z małych liter.
+    Otrzymuje Pan sekwencję ciągów znaków.
+    Proszę połączyć te ciągi w fragment tekstu, w którym początkowe ciągi są oddzielone przecinkami.
+    Aby zażartować z praworęcznych robotów, należy zastąpić wszystkie przypadki słowa "prawy" słowem "lewy",
+    nawet jeśli jest to część innego słowa. Wszystkie ciągi są pisane małymi literami.
 </p>
 
 
 <p>
-    <strong>Wejście: </strong> Sekwencja stringów.
+   <strong>Wejście:</strong> Sekwencja ciągów znaków <span>(str{% if is_js %}ing{% endif %})</span>.
 </p>
 
 <p>
-    <strong>Wyjście: </strong> Tekst jako ciąg słów oddzielonych przecinkami.
+   <strong>Wyjście:</strong> Tekst jako ciąg oddzielony przecinkami <span>(str{% if is_js %}ing{% endif %})</span>.
 </p>
 
 
 <div class="for_info_only">
     <p>
-        <strong>Przykład:</strong>
+        <strong>Przykłady:</strong>
     </p>
 <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
 
 <p class="for_info_only">
-    <strong>Zastosowanie: </strong>
-    Jest to prosty przykład operacji na sekwencjach.
+   <strong>Sposób użycia:</strong>
+    Jest to prosty przykład operacji wykorzystujących ciągi i sekwencje.
 </p>
 
 <p>
-    <strong>Warunek wstępny:</strong><br>
-    0 &lt; len(sekwencja wejściowa) &lt; 42<br>
+   <strong>Warunek wstępny:</strong><br>
+    0 &lt; len(phrases) &lt; 42<br>
 </p>
