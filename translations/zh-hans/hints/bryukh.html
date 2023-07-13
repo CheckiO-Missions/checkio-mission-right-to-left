@@ -1,0 +1,54 @@
+<body data-author="bryukh">
+<div class="question-answer">
+    <div class="question">
+        <p>
+            我不知道如何开始解决这项任务。
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            您可以使用<a target="_blank" href="https://docs.python.org/3/library/stdtypes.html#str.replace">replace()</a>.方法替换子串。
+        </p>
+        <pre class="brush: python">
+"abcd ababba".replace("ab", "0") == "0cd 00ba"
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            我需要帮助才能完成任务。
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            您可以使用<a target="_blank" href="https://docs.python.org/3/library/stdtypes.html#str.join">join()</a> 方法加入字符串。
+        </p>
+        <pre class="brush: python">
+":".join(["A", "1", "cd"]) == "A:1:cd"
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            我已经完成了一半。需要帮助！
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            连接所有给定的字符串，然后用 "left "替换 "right"，并返回（不要打印）结果。
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def left_join(phrases: tuple[str]) -> str:
+
+    join_phrase = ','.join(phrases)
+    result = join_phrase.replace('right','left')
+
+    return result
+        </pre>
+        </div>
+    </div>
+</div>
+</body>
