@@ -1,40 +1,54 @@
 <body data-author="bryukh">
 <div class="question-answer">
     <div class="question">
-        Ich habe keine Ahnung wie ich mit der Lösung anfangen soll.
+        <p>
+            Ich habe keine Ahnung, wie ich mit der Lösung dieser Aufgabe beginnen soll.
+        </p>
     </div>
     <div class="answer">
-        Du kannst Substrings, also Teile eines Strings, mit der
-        <a href="https://docs.python.org/3/library/stdtypes.html#str.replace">"replace" Methode</a> austauschen.
-<pre class="brush: python">
+        <p>
+            Sie können die Teilstrings durch die Methode <a target="_blank" href="https://docs.python.org/3/library/stdtypes.html#str.replace">replace()</a> ersetzen
+        </p>
+        <pre class="brush: python">
 "abcd ababba".replace("ab", "0") == "0cd 00ba"
-    </pre>
+        </pre>
     </div>
 </div>
 <div class="question-answer">
     <div class="question">
-        Ich brauche etwas Hilfe um weiter zu kommen.
+        <p>
+            Ich brauche Hilfe, um mit der Mission fortzufahren.
+        </p>
     </div>
     <div class="answer">
-        Um mehrere Strings zusammenzufügen benutze die
-        <a href="https://docs.python.org/3/library/stdtypes.html#str.join">"join" Methode</a>.
-<pre class="brush: python">
+        <p>
+            Und Sie können Strings mit der Methode <a target="_blank" href="https://docs.python.org/3/library/stdtypes.html#str.join">join()</a> beitreten.
+        </p>
+        <pre class="brush: python">
 ":".join(["A", "1", "cd"]) == "A:1:cd"
-    </pre>
+        </pre>
     </div>
 </div>
 <div class="question-answer">
     <div class="question">
-        Ich hab's fast. Bitte hilf mir!
+        <p>
+            Ich bin auf halbem Wege steckengeblieben. Ich brauche Hilfe!
+        </p>
     </div>
     <div class="answer">
-        Füge erst alle Worte zusammen, danach ersetze "right" durch "left". Denk aber daran, dass Deine Funktion
-        das Ergebnis zur/uuml;ckgeben und nicht drucken soll.<br>
-        Du könntest zum Beispiel sogenannte "chain calls" nutzen.
-<pre class="brush: python">
-return "...".join(some_array).replace(...)
-    </pre>
+        <p>
+            Verbinden Sie alle angegebenen Strings, ersetzen Sie dann "rechts" durch "links" und geben Sie das Ergebnis zurück (drucken Sie es nicht).
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def left_join(phrases: tuple[str]) -> str:
+
+    join_phrase = ','.join(phrases)
+    result = join_phrase.replace('right','left')
+
+    return result
+        </pre>
+        </div>
     </div>
 </div>
-
 </body>

@@ -1,39 +1,35 @@
 <img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
 <div class="story">
-    <p>"Seit Jahrhunderten leiden Linkshänder unter der ungerechten Benachteiligung einer Welt, die für Rechtshänder gemacht ist."
-        <br>Santrock, John W. (2008). Motor, Sensory, and Perceptual Development.</p>
+    <p>"Seit Jahrhunderten werden Linkshänder in einer Welt, die für Rechtshänder geschaffen wurde, ungerecht diskriminiert."
+       <br>Santrock, John W. (2008). Motorische, sensorische und wahrnehmungsbezogene Entwicklung.</p>
 
     <p>
-        "Die meisten Menschen (etwa 70 % bis 95 %) sind Rechtshänder, eine Minderheit
-        (etwa 5 % bis 30 %) Linkshänder, und eine unbestimmte Zahl von Menschen kann wohl am besten
-        als beidhändig beschrieben werden."
-        <br>Scientific American. www.scientificamerican.com</p>
+        "Die meisten Menschen (etwa 70 bis 95 Prozent) sind Rechtshänder, eine Minderheit (etwa 5 bis 30 Prozent)
+        sind Linkshänder, und eine unbestimmte Anzahl von Menschen ist wahrscheinlich am besten als beidhändig zu bezeichnen."
+       <br>Scientific American. www.scientificamerican.com</p>
 
 </div>
 
 <p>
-    Einer der Roboter hat eine einfache Aufgabe bekommen:
-    Er soll aus einer Folge einzelner Wörter einen Satz bilden, der dann als Wegbeschreibung dienen soll, die um das
-    Raumschiff herum führt.
-    Allerdings ist dieser Roboter Linkshänder und obendrein ein Spaßvogel. Er kann es einfach nicht lassen,
-    seine rechtshändigen Kollegen zu veräppeln.
+    Einer der Roboter ist mit einer einfachen Aufgabe betraut:
+    er soll eine Folge von Zeichenketten zu einem Satz zusammenfügen, um Anweisungen zu geben
+    wie man sich auf dem Schiff fortbewegt.
+    Aber dieser Roboter ist Linkshänder und neigt dazu, Witze zu machen und seine rechtshändigen Freunde zu verwirren.
 </p>
 <p>
-    Gegeben ist eine Folge von einzelnen Worten als Strings.
-    Du sollst aus diesen einzelnen Worten einen zusammenhängenden String bilden, in welchem die einzelnen Worte durch
-    Kommata getrennt sind.
-    Um die rechtshändigen Roboter zu veräppeln, sollst Du außerdem jedes "right" durch "left" ersetzen, auch wenn das
-    "right" nur Teil eines Wortes ist.
-    Alle Worte sind klein geschrieben!
+    Sie erhalten eine Folge von Zeichenketten.
+    Sie sollten diese Zeichenfolgen zu einem Textabschnitt zusammenfügen, bei dem die ersten Zeichenfolgen durch Kommata getrennt sind.
+    Um den rechtshändigen Robotern einen Streich zu spielen, sollten Sie alle Fälle, in denen das Wort "rechts" vorkommt, durch das Wort "links" ersetzen,
+    auch wenn es ein Teil eines anderen Wortes ist. Alle Zeichenfolgen werden in Kleinbuchstaben angegeben.
 </p>
 
 
 <p>
-    <strong>Eingabe: </strong> Eine Folge von Worten als Tuple (unicode).
+   <strong>Eingabe:</strong> Eine Folge von Zeichenketten <span>(str{% if is_js %}ing{% endif %})</span>.
 </p>
 
 <p>
-    <strong>Ausgabe: </strong> Den Text als String (einzelne Worte durch Kommata getrennt).
+   <strong>Ausgabe:</strong> Der Text als kommagetrennte Zeichenkette <span>(str{% if is_js %}ing{% endif %})</span>.
 </p>
 
 
@@ -45,11 +41,11 @@
 </div>
 
 <p class="for_info_only">
-    <strong>Wozu das gut ist: </strong>
-    Diese Aufgabe gibt ein einfaches Beispiel für den Umgang mit Strings und Folgen.
+   <strong>Wie es verwendet wird:</strong>
+    Dies ist ein einfaches Beispiel für Operationen mit Strings und Sequenzen.
 </p>
 
 <p>
-    <strong>Bedingungen:</strong><br>
-    0 &lt; len(phrases) &lt; 42<br>
+   <strong>Vorbedingung:</strong><br>
+    0 &lt; len(Phrasen) &lt; 42<br>
 </p>
