@@ -1,0 +1,54 @@
+<body data-author="bryukh">
+<div class="question-answer">
+    <div class="question">
+        <p>
+            Я понятия не имею, как приступить к решению этой задачи.
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            Можешь заменить подстроки с помощью метода <a target="_blank" href="https://docs-python.ru/tutorial/operatsii-tekstovymi-strokami-str-python/metod-str-replace/">replace()</a>.
+        </p>
+        <pre class="brush: python">
+"abcd ababba".replace("ab", "0") == "0cd 00ba"
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            Мне нужна некоторая помощь для продолжения выполнения задания.
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            И вы можете объединить строки с помощью метода <a target="_blank" href="https://docs-python.ru/tutorial/operatsii-tekstovymi-strokami-str-python/metod-str-join/">join()</a>.
+        </p>
+        <pre class="brush: python">
+":".join(["A", "1", "cd"]) == "A:1:cd"
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            Я прошел половину пути, но всё равно нужна помощь!
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            Соедините все заданные строки, затем замените "right" на "left" и верните (не печатайте) результат.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def left_join(phrases: tuple[str]) -> str:
+
+    join_phrase = ','.join(phrases)
+    result = join_phrase.replace('right','left')
+
+    return result
+        </pre>
+        </div>
+    </div>
+</div>
+</body>
